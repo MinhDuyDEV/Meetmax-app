@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import SignUpPage from "./pages/SignUpPage";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { AuthProvider } from "./contexts/auth-context";
+import LayoutAuthentication from "./layouts/LayoutAuthentication";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AuthProvider>
+        <Routes>
+          <Route element={<LayoutAuthentication></LayoutAuthentication>}>
+            <Route path="/sign-up" element={<SignUpPage></SignUpPage>}></Route>
+          </Route>
+        </Routes>
+      </AuthProvider>
     </div>
   );
-}
+};
 
 export default App;
