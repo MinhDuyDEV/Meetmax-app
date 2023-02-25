@@ -3,12 +3,13 @@ import WrapperAuthentication from "../modules/authentication/WrapperAuthenticati
 import TitleAuthentication from "../modules/authentication/TitleAuthentication";
 import { Input } from "../components/input";
 import { IconLock, IconMail } from "../components/icons";
-// import Checkbox from "../components/checkbox/Checkbox";
 import { Button } from "../components/button";
 import CheckHaveAccount from "../modules/authentication/CheckHaveAccount";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
+import Checkbox from "../components/checkbox/Checkbox";
+import { Link } from "react-router-dom";
 
 const schema = yup
   .object()
@@ -51,7 +52,7 @@ const SignInPage = () => {
             <IconMail></IconMail>
           </Input>
           <Input
-            placeholder="Inter Password"
+            placeholder="Enter Password"
             type="password"
             name="password"
             iconPassword
@@ -59,12 +60,17 @@ const SignInPage = () => {
           >
             <IconLock></IconLock>
           </Input>
-          {/* <div className="flex items-center justify-between mb-[30px]">
-            <Checkbox>Remember me</Checkbox>
-            <span className="font-medium cursor-pointer text-body14 text-gray">
+          <div className="flex items-center justify-between mb-[30px]">
+            <Checkbox name="remember" control={control}>
+              Remember me
+            </Checkbox>
+            <Link
+              to="/forgot-password"
+              className="font-medium cursor-pointer text-body14 text-gray"
+            >
               Forgot Password?
-            </span>
-          </div> */}
+            </Link>
+          </div>
           <Button type="submit">Sign In</Button>
         </form>
         <CheckHaveAccount text="You haven't any account?" to="/sign-up">

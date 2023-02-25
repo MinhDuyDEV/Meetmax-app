@@ -1,15 +1,23 @@
 import React, { useState } from "react";
+import { useController } from "react-hook-form";
 import { IconDeSelect, IconSelect } from "../icons";
 
-const Checkbox = ({ checked, children }) => {
+const Checkbox = ({ control, name, checked, children }) => {
   const [checkbox, setCheckbox] = useState(false);
+  const { field } = useController({
+    control,
+    name,
+    defaultValue: "",
+  });
   return (
     <label>
       <input
         onChange={() => {}}
         checked={checked}
         type="checkbox"
+        control={control}
         className="hidden-input"
+        {...field}
       />
       <div
         className="flex items-center gap-x-[10px] cursor-pointer select-none"

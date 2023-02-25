@@ -9,6 +9,7 @@ const Input = ({
   name,
   iconPassword = false,
   control,
+  className = "",
   children,
 }) => {
   const { value: showPassword, handleToggleValue: setShowPassword } =
@@ -22,7 +23,7 @@ const Input = ({
     defaultValue: "",
   });
   return (
-    <div className="relative mb-5">
+    <div className={`relative mb-5 ${className}`}>
       {children && (
         <div className="absolute z-10 left-[20px] top-2/4 -translate-y-2/4">
           {children}

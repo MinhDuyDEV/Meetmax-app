@@ -1,6 +1,7 @@
 import IconApple from "./IconApple";
 import IconCalender from "./IconCalender";
 import IconDeSelect from "./IconDeSelect";
+import IconDeSelectRadio from "./IconDeSelectRadio";
 import IconDown from "./IconDown";
 import IconEyeOff from "./IconEyeOff";
 import IconEyeOn from "./IconEyeOn";
@@ -10,6 +11,7 @@ import IconLock from "./IconLock";
 import IconMail from "./IconMail";
 import IconMale from "./IconMale";
 import IconSelect from "./IconSelect";
+import IconSelectRadio from "./IconSelectRadio";
 import IconSmile from "./IconSmile";
 
 export {
@@ -26,4 +28,6 @@ export {
   IconEyeOn,
   IconSelect,
   IconDeSelect,
+  IconSelectRadio,
+  IconDeSelectRadio,
 };

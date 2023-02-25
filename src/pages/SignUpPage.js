@@ -3,17 +3,19 @@ import TitleAuthentication from "../modules/authentication/TitleAuthentication";
 import React from "react";
 import CheckHaveAccount from "../modules/authentication/CheckHaveAccount";
 import * as yup from "yup";
-// import { Radio } from "../components/checkbox";
 import { Input } from "../components/input";
 import { Button } from "../components/button";
 import {
   IconCalender,
   IconLock,
   IconMail,
+  IconMale,
   IconSmile,
 } from "../components/icons";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import Radio from "../components/checkbox/Radio";
+import { gender } from "../utils/constant";
 
 const schema = yup
   .object()
@@ -38,13 +40,14 @@ const schema = yup
   .required();
 
 const SignUpPage = () => {
-  const { handleSubmit, control } = useForm({
+  const { handleSubmit, control, watch } = useForm({
     mode: "onChange",
     resolver: yupResolver(schema),
   });
   const handleSignUp = (values) => {
     console.log("🚀 ~ handleSignUp ~ values:", values);
   };
+  const watchGender = watch("gender");
   return (
     <>
       <TitleAuthentication
@@ -68,19 +71,37 @@ const SignUpPage = () => {
           >
             <IconLock></IconLock>
           </Input>
-          <div className="flex items-center gap-x-5 mb-[10px]">
+          <div className="flex items-center w-full gap-x-5">
             <Input
               placeholder="Date of birth"
               name="date"
               type="text"
+              className="mb-[30px]"
               control={control}
             >
               <IconCalender></IconCalender>
             </Input>
-            {/* <div className="flex items-center gap-x-[14px] border-gray rounded-[10px] border-opacity-20">
-              <Radio>Male</Radio>
-              <Radio>Female</Radio>
-            </div> */}
+            <div className="flex items-center border-opacity-20 w-2/4 p-[17px] rounded-[10px] gap-x-[18px] mb-[30px] border border-gray">
+              <IconMale></IconMale>
+              <div className="flex items-center gap-x-5">
+                <Radio
+                  name="gender"
+                  control={control}
+                  checked={Number(watchGender === gender.MALE)}
+                  value={gender.MALE}
+                >
+                  Male
+                </Radio>
+                <Radio
+                  name="gender"
+                  control={control}
+                  checked={Number(watchGender === gender.FEMALE)}
+                  value={gender.FEMALE}
+                >
+                  Female
+                </Radio>
+              </div>
+            </div>
           </div>
           <Button type="submit">Sign Up</Button>
         </form>
