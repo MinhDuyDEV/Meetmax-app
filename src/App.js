@@ -3,6 +3,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./contexts/auth-context";
 import LayoutAuthentication from "./layouts/LayoutAuthentication";
+import SignInPage from "./pages/SignInPage";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Routes>
           <Route element={<LayoutAuthentication></LayoutAuthentication>}>
             <Route path="/sign-up" element={<SignUpPage></SignUpPage>}></Route>
+            <Route path="/sign-in" element={<SignInPage></SignInPage>}></Route>
           </Route>
         </Routes>
       </AuthProvider>
