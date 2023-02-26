@@ -10,6 +10,7 @@ import IconGoogle from "./IconGoogle";
 import IconLock from "./IconLock";
 import IconMail from "./IconMail";
 import IconMale from "./IconMale";
+import IconSearch from "./IconSearch";
 import IconSelect from "./IconSelect";
 import IconSelectRadio from "./IconSelectRadio";
 import IconSmile from "./IconSmile";
@@ -30,4 +31,5 @@ export {
   IconDeSelect,
   IconSelectRadio,
   IconDeSelectRadio,
+  IconSearch,
 };

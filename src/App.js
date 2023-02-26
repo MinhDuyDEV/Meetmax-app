@@ -2,10 +2,12 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./contexts/auth-context";
 import LayoutAuthentication from "./layouts/LayoutAuthentication";
+import LayoutDashboard from "./layouts/LayoutDashboard";
 import CheckEmailPage from "./pages/authPages/CheckEmailPage";
 import ForgotPasswordPage from "./pages/authPages/ForgotPasswordPage";
 import SignInPage from "./pages/authPages/SignInPage";
 import SignUpPage from "./pages/authPages/SignUpPage";
+import FeedPage from "./pages/dashboard_page/FeedPage";
 // import { lazy, Suspense } from "react";
 
 // const SignUpPage = lazy(() => import("./pages/authPages/SignUpPage"));
@@ -27,6 +29,9 @@ const App = () => {
               path="/check-email"
               element={<CheckEmailPage></CheckEmailPage>}
             ></Route>
+          </Route>
+          <Route element={<LayoutDashboard></LayoutDashboard>}>
+            <Route path="/" element={<FeedPage></FeedPage>}></Route>
           </Route>
         </Routes>
       </AuthProvider>
