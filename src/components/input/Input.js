@@ -23,7 +23,7 @@ const Input = ({
     defaultValue: "",
   });
   return (
-    <div className={`relative mb-5 ${className}`}>
+    <div className={`relative ${className}`}>
       {children && (
         <div className="absolute z-10 left-[20px] top-2/4 -translate-y-2/4">
           {children}

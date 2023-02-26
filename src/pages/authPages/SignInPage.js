@@ -1,15 +1,17 @@
 import React from "react";
-import WrapperAuthentication from "../modules/authentication/WrapperAuthentication";
-import TitleAuthentication from "../modules/authentication/TitleAuthentication";
-import { Input } from "../components/input";
-import { IconLock, IconMail } from "../components/icons";
-import { Button } from "../components/button";
-import CheckHaveAccount from "../modules/authentication/CheckHaveAccount";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import Checkbox from "../components/checkbox/Checkbox";
 import { Link } from "react-router-dom";
+import TitleAuthentication from "../../modules/authentication/TitleAuthentication";
+import WrapperAuthentication from "../../modules/authentication/WrapperAuthentication";
+import { Input } from "../../components/input";
+import { IconLock, IconMail } from "../../components/icons";
+import { Checkbox } from "../../components/checkbox";
+import { Button } from "../../components/button";
+import CheckHaveAccount from "../../modules/authentication/CheckHaveAccount";
+import GroupForm from "../../modules/authentication/GroupForm";
+import ErrorText from "./ErrorText";
 
 const schema = yup
   .object()
@@ -33,7 +35,11 @@ const schema = yup
   .required();
 
 const SignInPage = () => {
-  const { handleSubmit, control } = useForm({
+  const {
+    handleSubmit,
+    control,
+    formState: { errors },
+  } = useForm({
     mode: "onChange",
     resolver: yupResolver(schema),
   });
@@ -48,22 +54,32 @@ const SignInPage = () => {
       ></TitleAuthentication>
       <WrapperAuthentication>
         <form onSubmit={handleSubmit(handleSignIn)}>
-          <Input placeholder="Your Email" name="email" control={control}>
-            <IconMail></IconMail>
-          </Input>
-          <Input
-            placeholder="Enter Password"
-            type="password"
-            name="password"
-            iconPassword
-            control={control}
-          >
-            <IconLock></IconLock>
-          </Input>
-          <div className="flex items-center justify-between mb-[30px]">
-            <Checkbox name="remember" control={control}>
-              Remember me
-            </Checkbox>
+          <GroupForm className={errors.email && "mb-[14px]"}>
+            <Input placeholder="Your Email" name="email" control={control}>
+              <IconMail></IconMail>
+            </Input>
+            {errors.email && <ErrorText>{errors.email.message}</ErrorText>}
+          </GroupForm>
+          <GroupForm className={errors.email && "mb-[14px]"}>
+            <Input
+              placeholder="Enter Password"
+              type="password"
+              name="password"
+              iconPassword
+              control={control}
+            >
+              <IconLock></IconLock>
+            </Input>
+            {errors.password && (
+              <ErrorText>{errors.password.message}</ErrorText>
+            )}
+          </GroupForm>
+          <div className="flex items-center justify-between mb-[30px] px-5">
+            <Checkbox
+              name="remember"
+              text="Remember me"
+              control={control}
+            ></Checkbox>
             <Link
               to="/forgot-password"
               className="font-medium cursor-pointer text-body14 text-gray"
