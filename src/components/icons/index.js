@@ -1,13 +1,20 @@
 import IconApple from "./IconApple";
+import IconBlock from "./IconBlock";
 import IconCalender from "./IconCalender";
+import IconCheck from "./IconCheck";
+import IconClose from "./IconClose";
+import IconComment from "./IconComment";
 import IconCommunity from "./IconCommunity";
+import IconDelete from "./IconDelete";
 import IconDeSelect from "./IconDeSelect";
 import IconDeSelectRadio from "./IconDeSelectRadio";
+import IconDocument from "./IconDocument";
 import IconDown from "./IconDown";
 import IconExplore from "./IconExplore";
 import IconEyeOff from "./IconEyeOff";
 import IconEyeOn from "./IconEyeOn";
 import IconFemale from "./IconFemale";
+import IconGif from "./IconGif";
 import IconGoogle from "./IconGoogle";
 import IconHome from "./IconHome";
 import IconLock from "./IconLock";
@@ -15,14 +22,22 @@ import IconLogout from "./IconLogout";
 import IconMail from "./IconMail";
 import IconMale from "./IconMale";
 import IconMessage from "./IconMessage";
+import IconMovie from "./IconMovie";
 import IconNotification from "./IconNotification";
 import IconOther from "./IconOther";
+import IconPicture from "./IconPicture";
+import IconReport from "./IconReport";
 import IconSearch from "./IconSearch";
 import IconSelect from "./IconSelect";
 import IconSelectRadio from "./IconSelectRadio";
+import IconSend from "./IconSend";
 import IconSetting from "./IconSetting";
+import IconShare from "./IconShare";
 import IconSmile from "./IconSmile";
+import IconUnFollow from "./IconUnFollow";
 import IconUser from "./IconUser";
+import IconVideoCamera from "./IconVideoCamera";
+import IconVolume from "./IconVolume";
 
 export {
   IconDown,
@@ -50,4 +65,19 @@ export {
   IconSetting,
   IconLogout,
   IconOther,
+  IconVideoCamera,
+  IconPicture,
+  IconComment,
+  IconShare,
+  IconGif,
+  IconSend,
+  IconReport,
+  IconUnFollow,
+  IconClose,
+  IconBlock,
+  IconVolume,
+  IconCheck,
+  IconDelete,
+  IconDocument,
+  IconMovie,
 };
