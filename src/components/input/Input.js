@@ -23,7 +23,7 @@ const Input = ({
     defaultValue: "",
   });
   return (
-    <div className={`relative ${className}`}>
+    <div className="relative">
       {children && (
         <div className="absolute z-10 left-[20px] top-2/4 -translate-y-2/4">
           {children}
@@ -34,7 +34,7 @@ const Input = ({
         id={name}
         type={type}
         placeholder={placeholder}
-        className="pr-5 pl-12 py-[18px] w-full text-gray text-body14 font-medium border border-gray rounded-[10px] border-opacity-20 outline-none placeholder:text-opacity-60 placeholder:text-gray placeholder:text-body14 placeholder:font-medium"
+        className={`pr-5 pl-12 py-[18px] focus:border-blue transition-all duration-300 w-full text-gray text-body14 font-medium border border-gray rounded-[10px] border-opacity-20 outline-none placeholder:text-opacity-60 placeholder:text-gray placeholder:text-body14 placeholder:font-medium ${className}`}
         {...field}
       />
       {iconPassword && (

@@ -8,9 +8,9 @@ const LayoutDashboard = ({ children }) => {
   return (
     <div className="max-w-[1440px] h-screen m-auto">
       <Header></Header>
-      <div className="flex items-center">
+      <div className="flex">
         <SiteBar></SiteBar>
-        <div className="flex-1 bg-gray bg-opacity-5">
+        <div className="flex-1 bg-gray bg-opacity-5 p-[30px] rounded-2xl">
           <Outlet></Outlet>
         </div>
         <RightBar></RightBar>

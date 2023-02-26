@@ -55,7 +55,12 @@ const SignInPage = () => {
       <WrapperAuthentication>
         <form onSubmit={handleSubmit(handleSignIn)}>
           <GroupForm className={errors.email && "mb-[14px]"}>
-            <Input placeholder="Your Email" name="email" control={control}>
+            <Input
+              placeholder="Your Email"
+              name="email"
+              control={control}
+              className={errors.email && "border-red focus:border-red"}
+            >
               <IconMail></IconMail>
             </Input>
             {errors.email && <ErrorText>{errors.email.message}</ErrorText>}
@@ -67,6 +72,7 @@ const SignInPage = () => {
               name="password"
               iconPassword
               control={control}
+              className={errors.password && "border-red focus:border-red"}
             >
               <IconLock></IconLock>
             </Input>

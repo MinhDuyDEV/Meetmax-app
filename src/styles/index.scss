@@ -7,6 +7,9 @@ input[type="password"]::-ms-reveal,
 input[type="password"]::-ms-clear {
   display: none;
 }
+body {
+  @apply text-display text-gray;
+}
 .hidden-input {
   border: 0;
   clip: rect(0 0 0 0);

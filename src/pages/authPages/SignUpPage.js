@@ -42,6 +42,7 @@ const schema = yup
       .string()
       .required("Please select your gender")
       .oneOf(["male", "female"], "You can only select male or female"),
+    date: yup.string().required("Please enter your birthday."),
   })
   .required();
 
@@ -71,24 +72,35 @@ const SignUpPage = () => {
       <WrapperAuthentication>
         <form onSubmit={handleSubmit(handleSignUp)}>
           <GroupForm className={errors.email && "mb-[14px]"}>
-            <Input placeholder="Your Email" name="email" control={control}>
+            <Input
+              placeholder="Your Email"
+              name="email"
+              control={control}
+              className={errors.email && "border-red focus:border-red"}
+            >
               <IconMail></IconMail>
             </Input>
             {errors.email && <ErrorText>{errors.email.message}</ErrorText>}
           </GroupForm>
           <GroupForm className={errors.email && "mb-[14px]"}>
-            <Input placeholder="Your Name" name="name" control={control}>
+            <Input
+              placeholder="Your Name"
+              name="name"
+              control={control}
+              className={errors.name && "border-red focus:border-red"}
+            >
               <IconSmile></IconSmile>
             </Input>
             {errors.name && <ErrorText>{errors.name.message}</ErrorText>}
           </GroupForm>
-          <GroupForm className={errors.email && "mb-[14px]"}>
+          <GroupForm className={errors.password && "mb-[14px]"}>
             <Input
               placeholder="Create Password"
               name="password"
               type="password"
               iconPassword
               control={control}
+              className={errors.password && "border-red focus:border-red"}
             >
               <IconLock></IconLock>
             </Input>
@@ -96,17 +108,17 @@ const SignUpPage = () => {
               <ErrorText>{errors.password.message}</ErrorText>
             )}
           </GroupForm>
-          <div className="flex items-center w-full gap-x-5">
+          <div className="flex items-center w-full gap-x-5 mb-[30px]">
             <Input
               placeholder="Date of birth"
               name="date"
               type="text"
-              className="mb-[30px]"
               control={control}
+              className={errors.date && "border-red focus:border-red"}
             >
               <IconCalender></IconCalender>
             </Input>
-            <div className="flex items-center border-opacity-20 w-2/4 pl-4 py-[17px] rounded-[10px] gap-x-[18px] mb-[30px] border border-gray">
+            <div className="flex items-center border-opacity-20 w-2/4 pl-4 py-[17px] rounded-[10px] gap-x-[18px]  border border-gray">
               <div className="flex items-center gap-x-5">
                 {watchGender === "male" ? <IconMale></IconMale> : null}
                 {watchGender === "female" ? <IconFemale></IconFemale> : null}

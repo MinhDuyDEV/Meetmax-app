@@ -3,9 +3,9 @@ import { IconSearch } from "../../components/icons";
 
 const Header = () => {
   return (
-    <div className="px-5 py-[18px] flex items-center">
+    <div className="px-5 py-[18px] flex items-center mr-[10px]">
       <img srcSet="/logo.png 2x" alt="logo" className="mr-[102px]" />
-      <div className="relative">
+      <div className="relative inline-block">
         <input
           type="text"
           placeholder="Search for something here..."
@@ -20,7 +20,7 @@ const Header = () => {
         <img
           src="/mixiface.png"
           alt=""
-          className="w-[42px] h-[42px] rounded-[10px]"
+          className="w-[42px] h-[42px] rounded-full object-cover cursor-pointer"
         />
       </div>
     </div>
