@@ -48,3 +48,7 @@ body {
   backdrop-filter: blur(25px);
   border-radius: 16px;
 }
+
+.input__create-post:focus + .create-post {
+  background-color: red;
+}

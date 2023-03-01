@@ -1,12 +1,11 @@
 import React from "react";
+import RightBar from "../../modules/dashboard/RightBar";
 
 const CommunityPage = () => {
   return (
-    <div>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-      itaque dolores sequi, velit adipisci eius veniam, aliquam aliquid ullam
-      nostrum esse facere? Ut velit nesciunt molestias quos dignissimos optio
-      aut.
+    <div className="flex">
+      <div className="flex-1 bg-gray bg-opacity-[3%] p-[30px] rounded-2xl"></div>
+      <RightBar></RightBar>
     </div>
   );
 };

@@ -2,11 +2,23 @@ import React from "react";
 
 const ExplorePage = () => {
   return (
-    <div>
+    <div className="bg-gray bg-opacity-[3%] p-[30px] rounded-2xl">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, nam quis
       repellat obcaecati nihil suscipit tenetur! Veniam possimus officia
       voluptas dolor ratione, quia impedit eveniet nobis vel alias vero
-      accusamus.
+      accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Assumenda placeat error libero dignissimos doloribus ea vitae laboriosam
+      obcaecati excepturi quo! Sapiente amet quod similique odio dolorum
+      officiis. Ut, quaerat pariatur? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Assumenda placeat error libero dignissimos doloribus ea
+      vitae laboriosam obcaecati excepturi quo! Sapiente amet quod similique
+      odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor, sit amet
+      consectetur adipisicing elit. Assumenda placeat error libero dignissimos
+      doloribus ea vitae laboriosam obcaecati excepturi quo! Sapiente amet quod
+      similique odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor,
+      sit amet consectetur adipisicing elit. Assumenda placeat error libero
+      dignissimos doloribus ea vitae laboriosam obcaecati excepturi quo!
+      Sapiente amet quod similique odio dolorum officiis. Ut, quaerat pariatur?
     </div>
   );
 };
