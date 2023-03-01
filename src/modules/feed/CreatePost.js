@@ -7,7 +7,7 @@ import {
 
 const CreatePost = () => {
   return (
-    <div className="p-[18px] wrapperCard">
+    <div className="p-[18px] wrapperCard mb-[30px]">
       <div className="flex items-center gap-x-[14px] mb-[18px]">
         <img
           src="/mixiface.png"

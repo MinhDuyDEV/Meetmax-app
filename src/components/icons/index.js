@@ -13,10 +13,13 @@ import IconDown from "./IconDown";
 import IconExplore from "./IconExplore";
 import IconEyeOff from "./IconEyeOff";
 import IconEyeOn from "./IconEyeOn";
+import IconFacebook from "./IconFacebook";
 import IconFemale from "./IconFemale";
 import IconGif from "./IconGif";
 import IconGoogle from "./IconGoogle";
+import IconHeart from "./IconHeart";
 import IconHome from "./IconHome";
+import IconInstagram from "./IconInstagram";
 import IconLock from "./IconLock";
 import IconLogout from "./IconLogout";
 import IconMail from "./IconMail";
@@ -34,6 +37,7 @@ import IconSend from "./IconSend";
 import IconSetting from "./IconSetting";
 import IconShare from "./IconShare";
 import IconSmile from "./IconSmile";
+import IconTwitter from "./IconTwitter";
 import IconUnFollow from "./IconUnFollow";
 import IconUser from "./IconUser";
 import IconVideoCamera from "./IconVideoCamera";
@@ -80,4 +84,8 @@ export {
   IconDelete,
   IconDocument,
   IconMovie,
+  IconHeart,
+  IconFacebook,
+  IconTwitter,
+  IconInstagram,
 };
