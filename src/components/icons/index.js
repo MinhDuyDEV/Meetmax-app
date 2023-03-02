@@ -1,6 +1,8 @@
 import IconApple from "./IconApple";
 import IconBlock from "./IconBlock";
+import IconBook from "./IconBook";
 import IconCalender from "./IconCalender";
+import IconCamera from "./IconCamera";
 import IconCheck from "./IconCheck";
 import IconClose from "./IconClose";
 import IconComment from "./IconComment";
@@ -88,4 +90,6 @@ export {
   IconFacebook,
   IconTwitter,
   IconInstagram,
+  IconBook,
+  IconCamera,
 };
