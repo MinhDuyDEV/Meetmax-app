@@ -3,6 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./contexts/auth-context";
 import LayoutAuthentication from "./layouts/LayoutAuthentication";
 import LayoutDashboard from "./layouts/LayoutDashboard";
+import Followers from "./modules/community/Followers";
+import Following from "./modules/community/Following";
+import Suggest from "./modules/community/Suggest";
 import CheckEmailPage from "./pages/authPages/CheckEmailPage";
 import ForgotPasswordPage from "./pages/authPages/ForgotPasswordPage";
 import SignInPage from "./pages/authPages/SignInPage";
@@ -38,10 +41,20 @@ const App = () => {
           </Route>
           <Route element={<LayoutDashboard></LayoutDashboard>}>
             <Route path="/" element={<FeedPage></FeedPage>}></Route>
-            <Route
-              path="/community"
-              element={<CommunityPage></CommunityPage>}
-            ></Route>
+            <Route path="/community" element={<CommunityPage></CommunityPage>}>
+              <Route
+                path="/community/followers"
+                element={<Followers></Followers>}
+              ></Route>
+              <Route
+                path="/community/following"
+                element={<Following></Following>}
+              ></Route>
+              <Route
+                path="/community/suggest"
+                element={<Suggest></Suggest>}
+              ></Route>
+            </Route>
             <Route
               path="/message"
               element={<MassagePage></MassagePage>}

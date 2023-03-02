@@ -5,7 +5,7 @@ import SiteBar from "../modules/dashboard/SiteBar";
 
 const LayoutDashboard = () => {
   return (
-    <div className="max-w-[1440px] h-screen m-auto">
+    <div className="max-w-[1440px] h-screen m-auto overflow-auto scrollbar-hide">
       <Header></Header>
       <div className="flex">
         <SiteBar></SiteBar>

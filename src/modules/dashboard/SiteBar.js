@@ -77,7 +77,7 @@ const SiteBar = () => {
             className={({ isActive }) =>
               isActive
                 ? `${navLinkClass} text-white bg-gray font-bold`
-                : `${navLinkClass} text-icon-color text-gray font-medium`
+                : `${navLinkClass} text-gray font-medium`
             }
           >
             <span>{link.icon}</span>
