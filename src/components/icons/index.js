@@ -1,4 +1,5 @@
 import IconApple from "./IconApple";
+import IconBirthday from "./IconBirthday";
 import IconBlock from "./IconBlock";
 import IconBook from "./IconBook";
 import IconCalender from "./IconCalender";
@@ -92,4 +93,5 @@ export {
   IconInstagram,
   IconBook,
   IconCamera,
+  IconBirthday,
 };

@@ -32,7 +32,7 @@ const CommentBox = () => {
           </span>
         </div>
       </div>
-      <div className="w-[38px] h-[38px] rounded-[5px] bg-blue bg-opacity-10 cursor-pointer flex items-center justify-center">
+      <div className="p-[11px] rounded-[5px] bg-blue bg-opacity-10 cursor-pointer flex items-center justify-center">
         <IconSend></IconSend>
       </div>
     </div>

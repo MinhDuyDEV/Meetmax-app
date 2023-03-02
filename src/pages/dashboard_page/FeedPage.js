@@ -1,5 +1,6 @@
 import React from "react";
 import RightBar from "../../modules/dashboard/RightBar";
+import BirthdaysEvent from "../../modules/feed/BirthdaysEvent";
 import CreatePost from "../../modules/feed/CreatePost";
 import Post from "../../modules/feed/Post";
 import RecentEvent from "../../modules/feed/RecentEvent";
@@ -18,6 +19,7 @@ const FeedPage = () => {
         <div className="flex-1 w-full max-w-[288px]">
           <SuggestFriend></SuggestFriend>
           <RecentEvent></RecentEvent>
+          <BirthdaysEvent></BirthdaysEvent>
         </div>
       </div>
       <RightBar></RightBar>
