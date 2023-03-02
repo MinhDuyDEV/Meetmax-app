@@ -1,5 +1,6 @@
 import React from "react";
 import { IconOther, IconSearch } from "../../components/icons";
+import UserActivate from "../feed/UserActivate";
 
 const RightBar = () => {
   return (
@@ -48,9 +49,24 @@ const RightBar = () => {
           <span>Saleh</span>
         </div>
       </div>
-      <div className="flex items-center justify-between mt-[30px] mr-[10px]">
+      <div className="flex items-center justify-between mt-[30px] mr-[10px] mb-[20px]">
         <span className="font-bold text-display text-gray">Friends</span>
         <IconOther></IconOther>
+      </div>
+      <div className="flex flex-col gap-y-[18px]">
+        <UserActivate active="online"></UserActivate>
+        <UserActivate active="2 min"></UserActivate>
+        <UserActivate active="online"></UserActivate>
+        <UserActivate active="online"></UserActivate>
+        <UserActivate active="10 min"></UserActivate>
+        <UserActivate active="online"></UserActivate>
+        <UserActivate active="2 min"></UserActivate>
+        <UserActivate active="online"></UserActivate>
+        <UserActivate active="online"></UserActivate>
+        <UserActivate active="10 min"></UserActivate>
+        <UserActivate active="online"></UserActivate>
+        <UserActivate active="15 hr"></UserActivate>
+        <UserActivate active="1 min"></UserActivate>
       </div>
     </div>
   );
