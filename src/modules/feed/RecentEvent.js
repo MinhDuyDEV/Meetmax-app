@@ -1,5 +1,5 @@
 import React from "react";
-import { IconOther } from "../../components/icons";
+import { IconBook, IconCamera, IconOther } from "../../components/icons";
 import Event from "./Event";
 
 const RecentEvent = () => {
@@ -11,8 +11,20 @@ const RecentEvent = () => {
           <IconOther></IconOther>
         </span>
       </div>
-      <Event></Event>
-      <Event></Event>
+      <Event
+        title="Graduation Ceremony"
+        desc="The graduation ceremony is also sometimes called..."
+        bg="green"
+      >
+        <IconBook></IconBook>
+      </Event>
+      <Event
+        title="Photography Ideas"
+        desc="Reflections. Reflections work because they can create..."
+        bg="red"
+      >
+        <IconCamera></IconCamera>
+      </Event>
     </div>
   );
 };
