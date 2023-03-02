@@ -23,6 +23,7 @@ import IconGoogle from "./IconGoogle";
 import IconHeart from "./IconHeart";
 import IconHome from "./IconHome";
 import IconInstagram from "./IconInstagram";
+import IconLink from "./IconLink";
 import IconLock from "./IconLock";
 import IconLogout from "./IconLogout";
 import IconMail from "./IconMail";
@@ -32,6 +33,7 @@ import IconMovie from "./IconMovie";
 import IconNotification from "./IconNotification";
 import IconOther from "./IconOther";
 import IconPicture from "./IconPicture";
+import IconPlus from "./IconPlus";
 import IconReport from "./IconReport";
 import IconSearch from "./IconSearch";
 import IconSelect from "./IconSelect";
@@ -42,6 +44,7 @@ import IconShare from "./IconShare";
 import IconSmile from "./IconSmile";
 import IconTwitter from "./IconTwitter";
 import IconUnFollow from "./IconUnFollow";
+import IconUpload from "./IconUpload";
 import IconUser from "./IconUser";
 import IconVideoCamera from "./IconVideoCamera";
 import IconVolume from "./IconVolume";
@@ -94,4 +97,7 @@ export {
   IconBook,
   IconCamera,
   IconBirthday,
+  IconLink,
+  IconUpload,
+  IconPlus,
 };

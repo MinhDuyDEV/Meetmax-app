@@ -16,7 +16,8 @@ const communityLinks = [
   },
 ];
 const CommunityTopBar = ({ quantity }) => {
-  const navLinkClass = "w-[252px] py-[10px] rounded-[10px] text-center";
+  const navLinkClass =
+    "w-[252px] py-[10px] rounded-[10px] text-center transition-all duration-200";
   return (
     <div className="flex items-center justify-between bg-white p-[18px] rounded-2xl mb-[18px]">
       {communityLinks.map((link) => {

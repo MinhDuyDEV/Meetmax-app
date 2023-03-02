@@ -6,7 +6,11 @@ import {
   IconTwitter,
 } from "../../components/icons";
 
-const Friend = ({ following }) => {
+const Friend = ({
+  following,
+  name = "Radovan SkillArena",
+  job = "Founder & CEO at Trophy",
+}) => {
   return (
     <div className="wrapperCard p-[18px] max-w-[264px] w-full">
       <div className="flex items-center gap-x-[18px] mb-[26px]">
@@ -16,11 +20,9 @@ const Friend = ({ following }) => {
           className="object-cover rounded-full w-[70px] h-[70px]"
         />
         <div className="flex flex-col">
-          <span className="font-medium text-display text-gray">
-            Radovan SkillArena
-          </span>
+          <span className="font-medium text-display text-gray">{name}</span>
           <span className="mb-[14px] font-medium text-gray text-opacity-60 text-body12">
-            Founder & CEO at Trophy
+            {job}
           </span>
           <div className="flex items-center gap-x-4">
             <IconExplore></IconExplore>

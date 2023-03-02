@@ -1,105 +1,29 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { IconPlus } from "../../components/icons";
+import ExploreCard from "../../modules/explore/ExploreCard";
 
 const ExplorePage = () => {
   return (
-    <div className="bg-gray bg-opacity-[3%] p-[30px] rounded-2xl">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, nam quis
-      repellat obcaecati nihil suscipit tenetur! Veniam possimus officia
-      voluptas dolor ratione, quia impedit eveniet nobis vel alias vero
-      accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      Assumenda placeat error libero dignissimos doloribus ea vitae laboriosam
-      obcaecati excepturi quo! Sapiente amet quod similique odio dolorum
-      officiis. Ut, quaerat pariatur? Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Assumenda placeat error libero dignissimos doloribus ea
-      vitae laboriosam obcaecati excepturi quo! Sapiente amet quod similique
-      odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor, sit amet
-      consectetur adipisicing elit. Assumenda placeat error libero dignissimos
-      doloribus ea vitae laboriosam obcaecati excepturi quo! Sapiente amet quod
-      similique odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor,
-      sit amet consectetur adipisicing elit. Assumenda placeat error libero
-      dignissimos doloribus ea vitae laboriosam obcaecati excepturi quo!
-      Sapiente amet quod similique odio dolorum officiis. Ut, quaerat
-      pariatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Nesciunt perspiciatis dignissimos illum officiis a molestias deleniti et,
-      necessitatibus libero exercitationem neque dolorum autem? Rem repellendus
-      debitis exercitationem laboriosam laudantium consequatur? Lorem ipsum
-      dolor, sit amet consectetur adipisicing elit. Assumenda placeat error
-      libero dignissimos doloribus ea vitae laboriosam obcaecati excepturi quo!
-      Sapiente amet quod similique odio dolorum officiis. Ut, quaerat pariatur?
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-      placeat error libero dignissimos doloribus ea vitae laboriosam obcaecati
-      excepturi quo! Sapiente amet quod similique odio dolorum officiis. Ut,
-      quaerat pariatur? Lorem ipsum dolor, sit amet consectetur adipisicing
-      elit. Assumenda placeat error libero dignissimos doloribus ea vitae
-      laboriosam obcaecati excepturi quo! Sapiente amet quod similique odio
-      dolorum officiis. Ut, quaerat pariatur?Lorem ipsum dolor sit, amet
-      consectetur adipisicing elit. Nesciunt perspiciatis dignissimos illum
-      officiis a molestias deleniti et, necessitatibus libero exercitationem
-      neque dolorum autem? Rem repellendus debitis exercitationem laboriosam
-      laudantium consequatur? Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Assumenda placeat error libero dignissimos doloribus ea
-      vitae laboriosam obcaecati excepturi quo! Sapiente amet quod similique
-      odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor, sit amet
-      consectetur adipisicing elit. Assumenda placeat error libero dignissimos
-      doloribus ea vitae laboriosam obcaecati excepturi quo! Sapiente amet quod
-      similique odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor,
-      sit amet consectetur adipisicing elit. Assumenda placeat error libero
-      dignissimos doloribus ea vitae laboriosam obcaecati excepturi quo!
-      Sapiente amet quod similique odio dolorum officiis. Ut, quaerat
-      pariatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Nesciunt perspiciatis dignissimos illum officiis a molestias deleniti et,
-      necessitatibus libero exercitationem neque dolorum autem? Rem repellendus
-      debitis exercitationem laboriosam laudantium consequatur? Lorem ipsum
-      dolor, sit amet consectetur adipisicing elit. Assumenda placeat error
-      libero dignissimos doloribus ea vitae laboriosam obcaecati excepturi quo!
-      Sapiente amet quod similique odio dolorum officiis. Ut, quaerat pariatur?
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-      placeat error libero dignissimos doloribus ea vitae laboriosam obcaecati
-      excepturi quo! Sapiente amet quod similique odio dolorum officiis. Ut,
-      quaerat pariatur? Lorem ipsum dolor, sit amet consectetur adipisicing
-      elit. Assumenda placeat error libero dignissimos doloribus ea vitae
-      laboriosam obcaecati excepturi quo! Sapiente amet quod similique odio
-      dolorum officiis. Ut, quaerat pariatur?Lorem ipsum dolor sit, amet
-      consectetur adipisicing elit. Nesciunt perspiciatis dignissimos illum
-      officiis a molestias deleniti et, necessitatibus libero exercitationem
-      neque dolorum autem? Rem repellendus debitis exercitationem laboriosam
-      laudantium consequatur? Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Assumenda placeat error libero dignissimos doloribus ea
-      vitae laboriosam obcaecati excepturi quo! Sapiente amet quod similique
-      odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor, sit amet
-      consectetur adipisicing elit. Assumenda placeat error libero dignissimos
-      doloribus ea vitae laboriosam obcaecati excepturi quo! Sapiente amet quod
-      similique odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor,
-      sit amet consectetur adipisicing elit. Assumenda placeat error libero
-      dignissimos doloribus ea vitae laboriosam obcaecati excepturi quo!
-      Sapiente amet quod similique odio dolorum officiis. Ut, quaerat
-      pariatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Nesciunt perspiciatis dignissimos illum officiis a molestias deleniti et,
-      necessitatibus libero exercitationem neque dolorum autem? Rem repellendus
-      debitis exercitationem laboriosam laudantium consequatur? Lorem ipsum
-      dolor, sit amet consectetur adipisicing elit. Assumenda placeat error
-      libero dignissimos doloribus ea vitae laboriosam obcaecati excepturi quo!
-      Sapiente amet quod similique odio dolorum officiis. Ut, quaerat pariatur?
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-      placeat error libero dignissimos doloribus ea vitae laboriosam obcaecati
-      excepturi quo! Sapiente amet quod similique odio dolorum officiis. Ut,
-      quaerat pariatur? Lorem ipsum dolor, sit amet consectetur adipisicing
-      elit. Assumenda placeat error libero dignissimos doloribus ea vitae
-      laboriosam obcaecati excepturi quo! Sapiente amet quod similique odio
-      dolorum officiis. Ut, quaerat pariatur?Lorem ipsum dolor sit, amet
-      consectetur adipisicing elit. Nesciunt perspiciatis dignissimos illum
-      officiis a molestias deleniti et, necessitatibus libero exercitationem
-      neque dolorum autem? Rem repellendus debitis exercitationem laboriosam
-      laudantium consequatur? Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Assumenda placeat error libero dignissimos doloribus ea
-      vitae laboriosam obcaecati excepturi quo! Sapiente amet quod similique
-      odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor, sit amet
-      consectetur adipisicing elit. Assumenda placeat error libero dignissimos
-      doloribus ea vitae laboriosam obcaecati excepturi quo! Sapiente amet quod
-      similique odio dolorum officiis. Ut, quaerat pariatur? Lorem ipsum dolor,
-      sit amet consectetur adipisicing elit. Assumenda placeat error libero
-      dignissimos doloribus ea vitae laboriosam obcaecati excepturi quo!
-      Sapiente amet quod similique odio dolorum officiis. Ut, quaerat pariatur?
+    <div className="bg-gray bg-opacity-[3%] p-[30px] rounded-2xl relative">
+      <div className="grid grid-cols-3 gap-[30px]">
+        <ExploreCard status="features"></ExploreCard>
+        <ExploreCard status="features"></ExploreCard>
+        <ExploreCard status="new"></ExploreCard>
+        <ExploreCard status="new"></ExploreCard>
+        <ExploreCard status="features"></ExploreCard>
+        <ExploreCard status="new"></ExploreCard>
+        <ExploreCard status="features"></ExploreCard>
+        <ExploreCard status="features"></ExploreCard>
+        <ExploreCard status="new"></ExploreCard>
+        <ExploreCard status="features"></ExploreCard>
+      </div>
+      <NavLink
+        to="/explore/add-new"
+        className="flex items-center justify-center bg-white w-[50px] h-[50px] rounded-full fixed top-0 right-0 -translate-x-[300px] translate-y-[700px]"
+      >
+        <IconPlus></IconPlus>
+      </NavLink>
     </div>
   );
 };
