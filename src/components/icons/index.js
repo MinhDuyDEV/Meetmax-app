@@ -24,6 +24,7 @@ import IconHeart from "./IconHeart";
 import IconHome from "./IconHome";
 import IconInstagram from "./IconInstagram";
 import IconLink from "./IconLink";
+import IconLocation from "./IconLocation";
 import IconLock from "./IconLock";
 import IconLogout from "./IconLogout";
 import IconMail from "./IconMail";
@@ -51,6 +52,7 @@ import IconVolume from "./IconVolume";
 
 export {
   IconDown,
+  IconLocation,
   IconGoogle,
   IconApple,
   IconMail,

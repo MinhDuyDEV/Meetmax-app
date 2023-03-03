@@ -1,11 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./contexts/auth-context";
-import LayoutAuthentication from "./layouts/LayoutAuthentication";
 import LayoutDashboard from "./layouts/LayoutDashboard";
 import Followers from "./modules/community/Followers";
 import Following from "./modules/community/Following";
 import Suggest from "./modules/community/Suggest";
+import ExploreAddNew from "./modules/explore/ExploreAddNew";
+import ExploreView from "./modules/explore/ExploreView";
 import CheckEmailPage from "./pages/authPages/CheckEmailPage";
 import ForgotPasswordPage from "./pages/authPages/ForgotPasswordPage";
 import SignInPage from "./pages/authPages/SignInPage";
@@ -27,7 +28,13 @@ const App = () => {
       {/* <Suspense> */}
       <AuthProvider>
         <Routes>
-          <Route element={<LayoutAuthentication></LayoutAuthentication>}>
+          <Route element={<LayoutDashboard></LayoutDashboard>}>
+            <Route element={<ExplorePage></ExplorePage>}>
+              <Route
+                path="/explore/add-new"
+                element={<ExploreAddNew></ExploreAddNew>}
+              ></Route>
+            </Route>
             <Route path="/sign-up" element={<SignUpPage></SignUpPage>}></Route>
             <Route path="/sign-in" element={<SignInPage></SignInPage>}></Route>
             <Route
@@ -63,10 +70,16 @@ const App = () => {
               path="/notification"
               element={<NotificationPage></NotificationPage>}
             ></Route>
-            <Route
-              path="/explore"
-              element={<ExplorePage></ExplorePage>}
-            ></Route>
+            <Route path="/explore" element={<ExplorePage></ExplorePage>}>
+              <Route
+                path="/explore"
+                element={<ExploreView></ExploreView>}
+              ></Route>
+              <Route
+                path="./add-new"
+                element={<ExploreAddNew></ExploreAddNew>}
+              ></Route>
+            </Route>
             <Route
               path="/profile"
               element={<ProfilePage></ProfilePage>}
