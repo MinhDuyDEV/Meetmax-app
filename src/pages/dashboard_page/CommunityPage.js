@@ -10,7 +10,9 @@ const CommunityPage = ({ quantity }) => {
         <CommunityTopBar></CommunityTopBar>
         <Outlet></Outlet>
       </div>
-      <RightBar></RightBar>
+      <div>
+        <RightBar></RightBar>
+      </div>
     </div>
   );
 };

@@ -58,7 +58,7 @@ const SiteBar = () => {
   const navLinkClass =
     "flex items-center gap-x-5 px-5 py-[15px] rounded-[10px] transition-all duration-200";
   return (
-    <div className="w-[240px] pt-[10px] px-5 text-display flex flex-col gap-y-[10px]">
+    <div className="w-[240px] pt-[10px] px-5 text-display flex flex-col gap-y-[10px] sticky top-[80px]">
       {siteBarLinks.map((link) => {
         if (link.url === "/logout") {
           return (

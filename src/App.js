@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./contexts/auth-context";
+import LayoutAuthentication from "./layouts/LayoutAuthentication";
 import LayoutDashboard from "./layouts/LayoutDashboard";
 import Followers from "./modules/community/Followers";
 import Following from "./modules/community/Following";
@@ -28,13 +29,7 @@ const App = () => {
       {/* <Suspense> */}
       <AuthProvider>
         <Routes>
-          <Route element={<LayoutDashboard></LayoutDashboard>}>
-            <Route element={<ExplorePage></ExplorePage>}>
-              <Route
-                path="/explore/add-new"
-                element={<ExploreAddNew></ExploreAddNew>}
-              ></Route>
-            </Route>
+          <Route element={<LayoutAuthentication></LayoutAuthentication>}>
             <Route path="/sign-up" element={<SignUpPage></SignUpPage>}></Route>
             <Route path="/sign-in" element={<SignInPage></SignInPage>}></Route>
             <Route
@@ -47,6 +42,12 @@ const App = () => {
             ></Route>
           </Route>
           <Route element={<LayoutDashboard></LayoutDashboard>}>
+            <Route element={<ExplorePage></ExplorePage>}>
+              <Route
+                path="/explore/add-new"
+                element={<ExploreAddNew></ExploreAddNew>}
+              ></Route>
+            </Route>
             <Route path="/" element={<FeedPage></FeedPage>}></Route>
             <Route path="/community" element={<CommunityPage></CommunityPage>}>
               <Route

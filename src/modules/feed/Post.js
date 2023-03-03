@@ -8,7 +8,7 @@ import CommentBox from "./CommentBox";
 
 const Post = () => {
   return (
-    <div className="p-[18px] wrapperCard mb-[30px]">
+    <div className="p-[18px] wrapperCard">
       <div className="flex items-center justify-between mb-[18px]">
         <User></User>
         <IconOther></IconOther>

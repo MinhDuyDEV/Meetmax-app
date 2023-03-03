@@ -19,7 +19,7 @@ const CommunityTopBar = ({ quantity }) => {
   const navLinkClass =
     "w-[252px] py-[10px] rounded-[10px] text-center transition-all duration-200";
   return (
-    <div className="flex items-center justify-between bg-white p-[18px] rounded-2xl mb-[18px]">
+    <div className="flex items-center justify-between bg-white p-[18px] rounded-2xl mb-[18px] sticky top-[110px] overflow-hidden z-10">
       {communityLinks.map((link) => {
         if (link.url === "./suggest") {
           return (

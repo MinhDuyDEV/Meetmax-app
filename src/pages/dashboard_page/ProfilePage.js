@@ -67,7 +67,7 @@ const ProfilePage = () => {
             Edit Details
           </button>
         </div>
-        <div className="flex-1 w-full max-w-[512px]">
+        <div className="flex-1 flex flex-col gap-y-[30px] w-full max-w-[512px]">
           <CreatePost></CreatePost>
           <Post></Post>
           <Post></Post>

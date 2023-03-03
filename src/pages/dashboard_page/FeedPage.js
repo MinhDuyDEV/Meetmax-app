@@ -10,8 +10,13 @@ const FeedPage = () => {
   return (
     <div className="flex">
       <div className="flex flex-1 bg-gray bg-opacity-[3%] p-[30px] rounded-2xl gap-x-[30px]">
-        <div className="flex-1 w-full max-w-[512px]">
+        <div className="flex-1 flex flex-col gap-y-[30px] w-full max-w-[512px]">
           <CreatePost></CreatePost>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
           <Post></Post>
           <Post></Post>
           <Post></Post>
@@ -22,7 +27,9 @@ const FeedPage = () => {
           <BirthdaysEvent></BirthdaysEvent>
         </div>
       </div>
-      <RightBar></RightBar>
+      <div>
+        <RightBar></RightBar>
+      </div>
     </div>
   );
 };

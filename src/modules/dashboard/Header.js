@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IconSearch } from "../../components/icons";
 
 const Header = () => {
   return (
-    <div className="px-5 py-[18px] flex items-center mr-[10px]">
-      <img srcSet="/logo.png 2x" alt="logo" className="mr-[102px]" />
+    <div className="px-5 py-[18px] flex items-center bg-white sticky top-0 overflow-hidden z-10">
+      <Link to="/" className="inline-block mr-[102px]">
+        <img srcSet="/logo.png 2x" alt="logo" />
+      </Link>
       <div className="relative inline-block">
         <input
           type="text"

@@ -4,7 +4,7 @@ import UserActivate from "../feed/UserActivate";
 
 const RightBar = () => {
   return (
-    <div className="w-[310px] text-center px-5">
+    <div className="w-[310px] text-center px-5 sticky top-[100px] pb-[50px]">
       <div className="relative inline-block">
         <input
           type="text"
@@ -58,15 +58,11 @@ const RightBar = () => {
         <UserActivate active="2 min"></UserActivate>
         <UserActivate active="online"></UserActivate>
         <UserActivate active="online"></UserActivate>
-        <UserActivate active="10 min"></UserActivate>
-        <UserActivate active="online"></UserActivate>
         <UserActivate active="2 min"></UserActivate>
-        <UserActivate active="online"></UserActivate>
         <UserActivate active="online"></UserActivate>
         <UserActivate active="10 min"></UserActivate>
         <UserActivate active="online"></UserActivate>
         <UserActivate active="15 hr"></UserActivate>
-        <UserActivate active="1 min"></UserActivate>
       </div>
     </div>
   );
