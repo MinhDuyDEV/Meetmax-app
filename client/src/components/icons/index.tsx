@@ -1,0 +1,9 @@
+export { default as IconGoogle } from "./icon-google";
+export { default as IconMail } from "./icon-mail";
+export { default as IconLock } from "./icon-lock";
+export { default as IconCloseEye } from "./icon-close-eye";
+export { default as IconOpenEye } from "./icon-open-eye";
+export { default as IconSmile } from "./icon-smile";
+export { default as IconCalendar } from "./icon-calendar";
+export { default as IconMale } from "./icon-male";
+export { default as IconFemale } from "./icon-female";
