@@ -20,6 +20,7 @@ import { IconMail } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   email: z
@@ -31,6 +32,7 @@ const formSchema = z.object({
 });
 
 const ForgotPasswordPage = () => {
+  const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -39,6 +41,7 @@ const ForgotPasswordPage = () => {
   });
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log("🚀 ~ onSubmit ~ values:", values);
+    router.push(`/check-email?email=${values.email}`);
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
   }
@@ -75,7 +78,7 @@ const ForgotPasswordPage = () => {
               className="mb-5 w-full bg-blue-500 hover:bg-blue-500/90"
               type="submit"
             >
-              Sign In
+              Send
             </Button>
           </form>
         </Form>

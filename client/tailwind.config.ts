@@ -25,6 +25,7 @@ const config = {
         dark1: "#191C21",
         dark2: "#212833",
         grayText: "#4E5D78",
+        blueText: "#377DFF",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
