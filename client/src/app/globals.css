@@ -68,10 +68,10 @@
 
 @layer base {
   * {
-    @apply border-border text-grayText dark:text-gray-100 font-medium text-base box-border;
+    @apply border-border font-medium text-base box-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-grayText dark:text-gray-100;
   }
   .container-auth {
     padding: 40px;

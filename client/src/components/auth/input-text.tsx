@@ -12,7 +12,7 @@ interface InputTextProps {
 
 const InputText = ({ icon, placeholder, field }: InputTextProps) => {
   return (
-    <div className="px-5 py-4 border rounded-10 flex items-center gap-2.5">
+    <div className="px-5 py-4 border border-gray-200 rounded-10 flex items-center gap-2.5">
       {icon}
       <Input placeholder={placeholder} {...field}></Input>
     </div>

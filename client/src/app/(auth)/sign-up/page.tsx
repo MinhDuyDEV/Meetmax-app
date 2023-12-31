@@ -76,9 +76,10 @@ const SignUpPage = () => {
     },
   });
   function onSubmit(values: z.infer<typeof formSchema>) {
+    const data = { ...values, birthday: format(values.birthday, "dd/MM/yyyy") };
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    console.log(values);
+    console.log(data);
   }
   return (
     <div>
@@ -96,7 +97,7 @@ const SignUpPage = () => {
               name="email"
               render={({ field }) => (
                 <FormItem
-                  className={form.formState.errors.name ? "mb-3.5" : "mb-5"}
+                  className={form.formState.errors.email ? "mb-3.5" : "mb-5"}
                 >
                   <FormControl>
                     <InputText
@@ -105,7 +106,7 @@ const SignUpPage = () => {
                       field={{ ...field }}
                     ></InputText>
                   </FormControl>
-                  <FormMessage className="text-sm font-normal" />
+                  <FormMessage className="text-sm text-rose-500 font-normal" />
                 </FormItem>
               )}
             />
@@ -123,7 +124,7 @@ const SignUpPage = () => {
                       field={{ ...field }}
                     ></InputText>
                   </FormControl>
-                  <FormMessage className="text-sm font-normal" />
+                  <FormMessage className="text-sm text-rose-500 font-normal" />
                 </FormItem>
               )}
             />
@@ -132,7 +133,7 @@ const SignUpPage = () => {
               name="password"
               render={({ field }) => (
                 <FormItem
-                  className={form.formState.errors.name ? "mb-3.5" : "mb-5"}
+                  className={form.formState.errors.password ? "mb-3.5" : "mb-5"}
                 >
                   <FormControl>
                     <InputPass
@@ -141,7 +142,7 @@ const SignUpPage = () => {
                       field={{ ...field }}
                     ></InputPass>
                   </FormControl>
-                  <FormMessage className="text-sm font-normal" />
+                  <FormMessage className="text-sm text-rose-500 font-normal" />
                 </FormItem>
               )}
             />
@@ -156,7 +157,7 @@ const SignUpPage = () => {
                         <FormControl>
                           <div
                             className={cn(
-                              "flex items-center gap-2.5 justify-start w-full px-5 py-3.5 rounded-10 border",
+                              "flex items-center gap-2.5 border-gray-200 justify-start w-full px-5 py-3.5 rounded-10 border",
                               !field.value && "text-muted-foreground"
                             )}
                           >
@@ -183,7 +184,7 @@ const SignUpPage = () => {
                         />
                       </PopoverContent>
                     </Popover>
-                    <FormMessage className="text-sm font-normal" />
+                    <FormMessage className="text-sm text-rose-500 font-normal" />
                   </FormItem>
                 )}
               />
@@ -197,7 +198,7 @@ const SignUpPage = () => {
                         <RadioGroup
                           onValueChange={field.onChange}
                           defaultValue={field.value}
-                          className="flex items-center px-5 py-4 rounded-10 border"
+                          className="flex items-center px-5 py-4 rounded-10 border border-gray-200"
                         >
                           <Label className="flex-1">
                             {field.value === "male" ? (
@@ -241,7 +242,7 @@ const SignUpPage = () => {
                         </RadioGroup>
                       </div>
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-sm text-rose-500 font-normal" />
                   </FormItem>
                 )}
               />
