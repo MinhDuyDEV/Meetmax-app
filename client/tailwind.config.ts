@@ -17,15 +17,19 @@ const config = {
         "2xl": "1400px",
       },
     },
-    borderRadius: {
-      "10": "10px",
-    },
     extend: {
+      padding: {
+        "30": "30px",
+      },
+      margin: {
+        "30": "30px",
+      },
       colors: {
         dark1: "#191C21",
         dark2: "#212833",
         grayText: "#4E5D78",
         blueText: "#377DFF",
+        grayWhite: "#FFFFFF",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -61,9 +65,7 @@ const config = {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        "10": "10px",
       },
       keyframes: {
         "accordion-down": {
