@@ -1,118 +1,25 @@
 "use client";
 
+import CreatePost from "@/components/feed/create-post";
+import Post from "@/components/feed/post";
 import React from "react";
 
 const FeedPage = () => {
   return (
-    <div>
-      Feed page Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-      tempore ab recusandae amet hic, dolorem mollitia minus unde debitis beatae
-      in temporibus cum eaque labore natus facilis asperiores nulla modi! Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Repellat, earum eos
-      obcaecati quo dignissimos nemo iusto magni quia qui velit officia expedita
-      placeat possimus eum doloremque, quisquam esse sit voluptas? Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Ipsum velit pariatur
-      recusandae fugit, facere ea veritatis tempore possimus unde quis id quas
-      similique earum nisi eius, optio dolore in ad? Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Similique, porro nihil! Quae quam saepe
-      veniam eum ad ex cum, vero doloremque consequatur, praesentium, veritatis
-      facere optio distinctio tenetur pariatur unde?Feed page Lorem ipsum dolor
-      sit amet consectetur adipisicing elit. Soluta tempore ab recusandae amet
-      hic, dolorem mollitia minus unde debitis beatae in temporibus cum eaque
-      labore natus facilis asperiores nulla modi! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Repellat, earum eos obcaecati quo
-      dignissimos nemo iusto magni quia qui velit officia expedita placeat
-      possimus eum doloremque, quisquam esse sit voluptas? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Ipsum velit pariatur recusandae fugit,
-      facere ea veritatis tempore possimus unde quis id quas similique earum
-      nisi eius, optio dolore in ad? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Similique, porro nihil! Quae quam saepe veniam eum ad ex
-      cum, vero doloremque consequatur, praesentium, veritatis facere optio
-      distinctio tenetur pariatur unde?Feed page Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Soluta tempore ab recusandae amet hic,
-      dolorem mollitia minus unde debitis beatae in temporibus cum eaque labore
-      natus facilis asperiores nulla modi! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Repellat, earum eos obcaecati quo
-      dignissimos nemo iusto magni quia qui velit officia expedita placeat
-      possimus eum doloremque, quisquam esse sit voluptas? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Ipsum velit pariatur recusandae fugit,
-      facere ea veritatis tempore possimus unde quis id quas similique earum
-      nisi eius, optio dolore in ad? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Similique, porro nihil! Quae quam saepe veniam eum ad ex
-      cum, vero doloremque consequatur, praesentium, veritatis facere optio
-      distinctio tenetur pariatur unde?Feed page Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Soluta tempore ab recusandae amet hic,
-      dolorem mollitia minus unde debitis beatae in temporibus cum eaque labore
-      natus facilis asperiores nulla modi! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Repellat, earum eos obcaecati quo
-      dignissimos nemo iusto magni quia qui velit officia expedita placeat
-      possimus eum doloremque, quisquam esse sit voluptas? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Ipsum velit pariatur recusandae fugit,
-      facere ea veritatis tempore possimus unde quis id quas similique earum
-      nisi eius, optio dolore in ad? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Similique, porro nihil! Quae quam saepe veniam eum ad ex
-      cum, vero doloremque consequatur, praesentium, veritatis facere optio
-      distinctio tenetur pariatur unde?Feed page Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Soluta tempore ab recusandae amet hic,
-      dolorem mollitia minus unde debitis beatae in temporibus cum eaque labore
-      natus facilis asperiores nulla modi! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Repellat, earum eos obcaecati quo
-      dignissimos nemo iusto magni quia qui velit officia expedita placeat
-      possimus eum doloremque, quisquam esse sit voluptas? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Ipsum velit pariatur recusandae fugit,
-      facere ea veritatis tempore possimus unde quis id quas similique earum
-      nisi eius, optio dolore in ad? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Similique, porro nihil! Quae quam saepe veniam eum ad ex
-      cum, vero doloremque consequatur, praesentium, veritatis facere optio
-      distinctio tenetur pariatur unde?Feed page Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Soluta tempore ab recusandae amet hic,
-      dolorem mollitia minus unde debitis beatae in temporibus cum eaque labore
-      natus facilis asperiores nulla modi! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Repellat, earum eos obcaecati quo
-      dignissimos nemo iusto magni quia qui velit officia expedita placeat
-      possimus eum doloremque, quisquam esse sit voluptas? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Ipsum velit pariatur recusandae fugit,
-      facere ea veritatis tempore possimus unde quis id quas similique earum
-      nisi eius, optio dolore in ad? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Similique, porro nihil! Quae quam saepe veniam eum ad ex
-      cum, vero doloremque consequatur, praesentium, veritatis facere optio
-      distinctio tenetur pariatur unde?Feed page Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Soluta tempore ab recusandae amet hic,
-      dolorem mollitia minus unde debitis beatae in temporibus cum eaque labore
-      natus facilis asperiores nulla modi! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Repellat, earum eos obcaecati quo
-      dignissimos nemo iusto magni quia qui velit officia expedita placeat
-      possimus eum doloremque, quisquam esse sit voluptas? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Ipsum velit pariatur recusandae fugit,
-      facere ea veritatis tempore possimus unde quis id quas similique earum
-      nisi eius, optio dolore in ad? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Similique, porro nihil! Quae quam saepe veniam eum ad ex
-      cum, vero doloremque consequatur, praesentium, veritatis facere optio
-      distinctio tenetur pariatur unde?Feed page Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Soluta tempore ab recusandae amet hic,
-      dolorem mollitia minus unde debitis beatae in temporibus cum eaque labore
-      natus facilis asperiores nulla modi! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Repellat, earum eos obcaecati quo
-      dignissimos nemo iusto magni quia qui velit officia expedita placeat
-      possimus eum doloremque, quisquam esse sit voluptas? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Ipsum velit pariatur recusandae fugit,
-      facere ea veritatis tempore possimus unde quis id quas similique earum
-      nisi eius, optio dolore in ad? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Similique, porro nihil! Quae quam saepe veniam eum ad ex
-      cum, vero doloremque consequatur, praesentium, veritatis facere optio
-      distinctio tenetur pariatur unde?Feed page Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Soluta tempore ab recusandae amet hic,
-      dolorem mollitia minus unde debitis beatae in temporibus cum eaque labore
-      natus facilis asperiores nulla modi! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Repellat, earum eos obcaecati quo
-      dignissimos nemo iusto magni quia qui velit officia expedita placeat
-      possimus eum doloremque, quisquam esse sit voluptas? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Ipsum velit pariatur recusandae fugit,
-      facere ea veritatis tempore possimus unde quis id quas similique earum
-      nisi eius, optio dolore in ad? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Similique, porro nihil! Quae quam saepe veniam eum ad ex
-      cum, vero doloremque consequatur, praesentium, veritatis facere optio
-      distinctio tenetur pariatur unde?
+    <div className="grid gap-8 lg:gap-20 p-30 lg:grid-cols-2 grid-cols-1">
+      <div className="grid grid-cols-1 gap-30 w-[512px] mx-auto">
+        <CreatePost></CreatePost>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+      </div>
+      <div className="hidden lg:flex lg:flex-col max-w-[288px] mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+        assumenda dignissimos debitis aliquam dicta neque iste repellat eligendi
+        tenetur totam accusantium omnis perspiciatis quia, numquam a repellendus
+        expedita quidem dolorum?
+      </div>
     </div>
   );
 };

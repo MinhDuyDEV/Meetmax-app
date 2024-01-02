@@ -20,9 +20,15 @@ const config = {
     extend: {
       padding: {
         "30": "30px",
+        "18": "18px",
       },
       margin: {
         "30": "30px",
+        "18": "18px",
+      },
+      gap: {
+        "30": "30px",
+        "18": "18px",
       },
       colors: {
         dark1: "#191C21",
