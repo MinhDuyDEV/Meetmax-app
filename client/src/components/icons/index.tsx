@@ -24,3 +24,8 @@ export { default as IconComment } from "./icon-comment";
 export { default as IconShare } from "./icon-share";
 export { default as IconSend } from "./icon-send";
 export { default as IconGif } from "./icon-gif";
+export { default as IconFacebook } from "./icon-facebook";
+export { default as IconTwitter } from "./icon-twitter";
+export { default as IconInstagram } from "./icon-instagram";
+export { default as IconBook } from "./icon-book";
+export { default as IconBirthday } from "./icon-birthday";

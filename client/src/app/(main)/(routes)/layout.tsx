@@ -17,7 +17,7 @@ const LayoutMain = ({ children }: { children: React.ReactNode }) => {
       {/* Container */}
       <div className="flex relative">
         {/* Routes */}
-        <div className="flex flex-col w-[240px] sticky h-fit left-0 top-[78px] bg-grayWhite">
+        <div className="hidden md:flex flex-col w-[240px] sticky h-fit left-0 top-[78px] bg-grayWhite">
           <SideBarMain></SideBarMain>
         </div>
         {/* content */}
