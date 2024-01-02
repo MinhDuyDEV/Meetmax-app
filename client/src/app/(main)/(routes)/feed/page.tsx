@@ -9,7 +9,7 @@ import BirthdayCard from "@/components/feed/birthday-card";
 
 const FeedPage = () => {
   return (
-    <div className="grid gap-8 p-30 lg:grid-cols-2 grid-cols-1">
+    <div className="grid gap-8 p-30 place-items-stretch lg:grid-cols-2 grid-cols-1">
       <div className="grid grid-cols-1 gap-30 w-[512px] mx-auto">
         <CreatePost></CreatePost>
         <Post></Post>
@@ -17,7 +17,7 @@ const FeedPage = () => {
         <Post></Post>
         <Post></Post>
       </div>
-      <div className="hidden xl:flex xl:flex-col w-[288px] mx-auto gap-30">
+      <div className="hidden md:flex md:flex-col w-[288px] mx-auto gap-30">
         <SuggestFriend></SuggestFriend>
         <RecentEvent></RecentEvent>
         <BirthdayCard></BirthdayCard>

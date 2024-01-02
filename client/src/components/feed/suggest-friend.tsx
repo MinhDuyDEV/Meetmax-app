@@ -17,7 +17,7 @@ const SuggestFriend = () => {
       <div className="px-18 py-2.5 border-b border-gray-200 flex items-center justify-between">
         <p className="font-bold">You Might Like</p>
         <Link
-          href="/community?suggest=true"
+          href="/community?tab=suggest"
           className="text-[13px] text-blueText"
         >
           See All
