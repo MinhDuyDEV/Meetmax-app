@@ -8,7 +8,7 @@ import { Input } from "../ui/input";
 
 const HeaderMain = () => {
   return (
-    <div className="flex items-center justify-between py-[18px] pl-5 pr-30 sticky top-0 bg-grayWhite">
+    <div className="flex items-center justify-between py-[18px] pl-5 pr-30 bg-grayWhite">
       <div className="flex items-center flex-1">
         <Link
           href="/"
