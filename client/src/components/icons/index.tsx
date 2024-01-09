@@ -34,3 +34,8 @@ export { default as IconNotificationLove } from "./icon-notification-love";
 export { default as IconNotificationPost } from "./icon-notification-post";
 export { default as IconNotificationShare } from "./icon-notification-share";
 export { default as IconNotificationUser } from "./icon-notification-user";
+export { default as IconAngleRight } from "./icon-angle-right";
+export { default as IconSecurity } from "./icon-security";
+export { default as IconLanguage } from "./icon-language";
+export { default as IconBlocking } from "./icon-blocking";
+export { default as IconClock } from "./icon-clock";
