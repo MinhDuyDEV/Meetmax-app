@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { IconSearch } from "../icons";
 import { Input } from "../ui/input";
+import InputMain from "./input-main";
 
 const HeaderMain = () => {
   return (
@@ -17,13 +18,7 @@ const HeaderMain = () => {
           <Image src="/logo.png" width={26} height={26} alt="logo"></Image>
           <span className="text-lg font-bold text-grayText">Meetmax</span>
         </Link>
-        <div className="hidden xl:flex items-center rounded-10 gap-2.5 py-2.5 px-5 border border-gray-300 w-full max-w-[782px]">
-          <IconSearch></IconSearch>
-          <Input
-            placeholder="Search for something here..."
-            className="placeholder:font-normal"
-          ></Input>
-        </div>
+        <InputMain className="max-w-[782px]"></InputMain>
       </div>
       <div className="flex items-center justify-center gap-5">
         <span>MinhDuy</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import HeaderMain from "@/components/main/header-main";
+import RightBar from "@/components/main/right-bar";
 import SideBarMain from "@/components/main/sidebar-main";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -26,9 +27,7 @@ const LayoutMain = ({ children }: { children: React.ReactNode }) => {
         </div>
         {/* right bar */}
         {(pathname === "/feed" || pathname === "/community") && (
-          <div className="hidden xl:flex flex-col w-[310px] sticky h-fit right-0 top-[78px] bg-grayWhite">
-            right bar
-          </div>
+          <RightBar></RightBar>
         )}
       </div>
     </div>
