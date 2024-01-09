@@ -12,7 +12,7 @@ const ListFriendMain = () => {
         <span className="font-bold">Friends</span>
         <IconOther></IconOther>
       </div>
-      <ScrollArea className="h-[800px]">
+      <ScrollArea className="h-[600px]">
         <div className="flex flex-col gap-18 ">
           {Array.from({ length: 20 }).map((_, index) => (
             <ItemFriendMain key={index}></ItemFriendMain>

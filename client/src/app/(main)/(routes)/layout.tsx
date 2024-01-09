@@ -26,9 +26,9 @@ const LayoutMain = ({ children }: { children: React.ReactNode }) => {
           {children}
         </div>
         {/* right bar */}
-        {(pathname === "/feed" || pathname === "/community") && (
-          <RightBar></RightBar>
-        )}
+        {(pathname === "/feed" ||
+          pathname === "/community" ||
+          pathname === "/notification") && <RightBar></RightBar>}
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import FriendCard from "./friend-card";
 
 const FollowerList = () => {
   return (
-    <div className="grid sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-5 grid-cols-1">
+    <div className="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 place-items-center gap-5 grid-cols-1">
       <FriendCard></FriendCard>
       <FriendCard></FriendCard>
       <FriendCard></FriendCard>

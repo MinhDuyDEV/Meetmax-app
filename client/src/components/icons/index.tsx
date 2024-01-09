@@ -29,3 +29,8 @@ export { default as IconTwitter } from "./icon-twitter";
 export { default as IconInstagram } from "./icon-instagram";
 export { default as IconBook } from "./icon-book";
 export { default as IconBirthday } from "./icon-birthday";
+export { default as IconNotificationComment } from "./icon-notification-comment";
+export { default as IconNotificationLove } from "./icon-notification-love";
+export { default as IconNotificationPost } from "./icon-notification-post";
+export { default as IconNotificationShare } from "./icon-notification-share";
+export { default as IconNotificationUser } from "./icon-notification-user";
