@@ -12,7 +12,7 @@ const LayoutSetting = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
   return (
     <div className="p-30">
-      <div className="bg-grayWhite grid grid-cols-5 rounded-xl h-screen">
+      <div className="bg-grayWhite grid 2xl:grid-cols-5 md:grid-cols-4 grid-cols-3 rounded-xl h-ull">
         <div className="col-span-1 py-30 px-5 border-r transition-all border-gray-200 flex flex-col gap-2.5">
           {sidebarLinksSetting.map((link) => (
             <SidebarSettingLink
@@ -22,7 +22,9 @@ const LayoutSetting = ({ children }: { children: React.ReactNode }) => {
             ></SidebarSettingLink>
           ))}
         </div>
-        <div className="col-span-4 p-30">{children}</div>
+        <div className="md:col-span-3 2xl:col-span-4 col-span-2 p-30">
+          {children}
+        </div>
       </div>
     </div>
   );

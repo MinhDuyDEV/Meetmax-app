@@ -39,3 +39,4 @@ export { default as IconSecurity } from "./icon-security";
 export { default as IconLanguage } from "./icon-language";
 export { default as IconBlocking } from "./icon-blocking";
 export { default as IconClock } from "./icon-clock";
+export { default as IconUpload } from "./icon-upload";

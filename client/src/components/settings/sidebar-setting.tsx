@@ -20,12 +20,14 @@ const SidebarSettingLink = ({ link, isActive }: SidebarSettingProps) => {
         isActive ? "font-bold" : "font-normal"
       )}
     >
-      {link.icon}
+      <span className="w-4 h-4 flex-shrink-0 items-center justify-center">
+        {link.icon}
+      </span>
       <p className={cn("text-sm", isActive ? "font-bold" : "font-normal")}>
         {link.title}
       </p>
       {isActive && (
-        <span className="ml-5">
+        <span className="ml-1">
           <IconAngleRight></IconAngleRight>
         </span>
       )}

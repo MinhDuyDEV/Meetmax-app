@@ -32,7 +32,6 @@ import {
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 import IconCalendar from "@/components/icons/icon-calendar";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
