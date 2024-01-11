@@ -40,3 +40,7 @@ export { default as IconLanguage } from "./icon-language";
 export { default as IconBlocking } from "./icon-blocking";
 export { default as IconClock } from "./icon-clock";
 export { default as IconUpload } from "./icon-upload";
+export { default as IconPC } from "./icon-pc";
+export { default as IconMobile } from "./icon-mobile";
+export { default as IconTablet } from "./icon-tablet";
+export { default as IconLaptop } from "./icon-laptop";
