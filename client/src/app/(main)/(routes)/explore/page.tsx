@@ -8,7 +8,7 @@ import React from "react";
 
 const ExplorePage = () => {
   return (
-    <div className="relative p-30 h-screen grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-30">
+    <div className="relative p-30 h-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-30">
       <Link
         href="/explore/add-new"
         className="rounded-full fixed right-[30px] top-2/3 shadow w-[50px] bg-grayWhite h-[50px] flex items-center justify-center cursor-pointer"

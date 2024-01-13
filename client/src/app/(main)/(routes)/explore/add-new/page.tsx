@@ -68,9 +68,12 @@ const ExploreAddNewPage = () => {
     console.log("🚀 ~ onSubmit ~ data:", data);
   }
   return (
-    <div className="p-30 pt-9">
-      <div className="bg-grayWhite p-30 rounded-xl h-screen overflow-hidden">
-        <div className="mb-30">Explore/Add new</div>
+    <div className="p-30 pt-9 h-full">
+      <div className="bg-grayWhite p-30 rounded-xl h-full overflow-hidden">
+        <div className="mb-30 text-sm text-gray-400">
+          Explore/
+          <span className="text-grayText">Add new</span>
+        </div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
             <div className="grid 2xl:grid-cols-5 md:grid-cols-4 grid-cols-3">

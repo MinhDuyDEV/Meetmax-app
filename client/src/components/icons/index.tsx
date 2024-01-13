@@ -46,3 +46,6 @@ export { default as IconTablet } from "./icon-tablet";
 export { default as IconLaptop } from "./icon-laptop";
 export { default as IconPlus } from "./icon-plus";
 export { default as IconLink } from "./icon-link";
+export { default as IconLike } from "./icon-like";
+export { default as IconDocument } from "./icon-document";
+export { default as IconLocation } from "./icon-location";

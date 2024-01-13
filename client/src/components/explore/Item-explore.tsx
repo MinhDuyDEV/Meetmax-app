@@ -16,7 +16,7 @@ interface ItemExploreProps {
 
 const ItemExplore = ({ desc, image, time, title, type }: ItemExploreProps) => {
   return (
-    <div className="flex flex-col rounded-10 h-[430px] bg-grayWhite max-w-[350px] overflow-hidden flex-shrink-0">
+    <div className="flex flex-col rounded-10 h-[430px] bg-grayWhite max-w-[350px] overflow-hidden flex-shrink-0 shadow-sm">
       <div className="relative h-[200px] w-[350px] overflow-hidden">
         <Image
           src={image || "https://source.unsplash.com/random"}
