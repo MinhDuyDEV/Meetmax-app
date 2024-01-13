@@ -71,34 +71,6 @@ const ExplorePage = () => {
         title="how to create web application using python?"
         desc="If you are looking for hotels near a street address, this simple search form will help you find lorem ipsum dolor sit amet, consectetur adipiscing elit."
       ></ItemExplore>
-      <ItemExplore
-        type="Features"
-        image="https://source.unsplash.com/random"
-        time="Friday 13 August"
-        title="How To Choose Best Bike For Spring In Bangladesh?"
-        desc="If you ever wish to buy a motorcycle for you than you must think a lot before buying..."
-      ></ItemExplore>
-      <ItemExplore
-        type="News"
-        image="https://source.unsplash.com/random"
-        time="Friday 13 August"
-        title="How To Choose Best Bike For Spring In Bangladesh?"
-        desc="If you ever wish to buy a motorcycle for you than you must think a lot before buying..."
-      ></ItemExplore>
-      <ItemExplore
-        type="News"
-        image="https://source.unsplash.com/random"
-        time="Friday 13 August"
-        title="photography ideas for beginners using DSLR."
-        desc="Before the days of DSLR — if you can remember such a time — taking a great..."
-      ></ItemExplore>
-      <ItemExplore
-        type="Features"
-        image="https://source.unsplash.com/random"
-        time="Friday 13 August"
-        title="how to create web application using python?"
-        desc="If you are looking for hotels near a street address, this simple search form will help you find lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      ></ItemExplore>
     </div>
   );
 };
