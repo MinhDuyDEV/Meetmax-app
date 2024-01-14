@@ -49,3 +49,5 @@ export { default as IconLink } from "./icon-link";
 export { default as IconLike } from "./icon-like";
 export { default as IconDocument } from "./icon-document";
 export { default as IconLocation } from "./icon-location";
+export { default as IconAngleDown } from "./icon-angle-down";
+export { default as IconClose } from "./icon-close";
