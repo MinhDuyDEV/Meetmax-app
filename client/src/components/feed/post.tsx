@@ -5,10 +5,14 @@ import {
   IconBell,
   IconCloseEye,
   IconComment,
+  IconCopy,
+  IconFacebook,
   IconHeart,
+  IconInstagram,
   IconOther,
   IconReport,
   IconShare,
+  IconTwitter,
   IconUnFollow,
 } from "../icons";
 import Image from "next/image";
@@ -46,19 +50,19 @@ const Post = () => {
             align="end"
             className="p-18 flex flex-col gap-2.5"
           >
-            <DropdownMenuItem className="text-grayText">
+            <DropdownMenuItem className="text-grayText p-0">
               <IconCloseEye className="mr-18" />
               <span className="">Order details</span>
             </DropdownMenuItem>
-            <DropdownMenuItem className="text-grayText">
+            <DropdownMenuItem className="text-grayText p-0">
               <IconBell className="mr-18" />
               <span className="">Turn on notification for this post</span>
             </DropdownMenuItem>
-            <DropdownMenuItem className="text-grayText">
+            <DropdownMenuItem className="text-grayText p-0">
               <IconReport className="mr-18" />
               <span className="">Report this post</span>
             </DropdownMenuItem>
-            <DropdownMenuItem className="text-grayText">
+            <DropdownMenuItem className="text-grayText p-0">
               <IconUnFollow className="mr-18" />
               <span className="">UnFollow</span>
             </DropdownMenuItem>
@@ -90,10 +94,39 @@ const Post = () => {
           <IconComment></IconComment>
           <p className="text-xs">Comments</p>
         </div>
-        <div className="flex items-center gap-2.5 cursor-pointer">
-          <IconShare></IconShare>
-          <p className="text-xs">Share</p>
-        </div>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <div className="flex items-center gap-2.5 cursor-pointer">
+              <IconShare></IconShare>
+              <p className="text-xs">Share</p>
+            </div>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent
+            align="end"
+            className="p-18 flex flex-col gap-2.5"
+          >
+            <DropdownMenuItem className="text-grayText p-0">
+              <IconShare className="mr-18" />
+              <span className="">Share Now</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-grayText p-0">
+              <IconFacebook className="mr-18" />
+              <span className="">Facebook</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-grayText p-0">
+              <IconTwitter className="mr-18" />
+              <span className="">Twitter</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-grayText p-0">
+              <IconInstagram className="mr-18" />
+              <span className="">Instagram</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-grayText p-0">
+              <IconCopy className="mr-18" />
+              <span className="">Copy Link</span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
       <div className="flex items-center gap-3.5">
         <div className="relative overflow-hidden">

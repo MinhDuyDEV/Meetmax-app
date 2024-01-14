@@ -9,7 +9,7 @@ const InputComment = () => {
     <div className="bg-gray-50 rounded-10 py-2 px-2.5 flex items-center w-full">
       <Input
         placeholder="Write a comment..."
-        className="placeholder:text-sm placeholder:font-normal "
+        className="placeholder:text-sm placeholder:font-normal bg-transparent"
       ></Input>
       <div className="flex items-center gap-3.5">
         <div className="p-1 cursor-pointer">

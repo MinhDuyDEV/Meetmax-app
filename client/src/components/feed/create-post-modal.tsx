@@ -18,6 +18,13 @@ import Image from "next/image";
 import { Textarea } from "../ui/textarea";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../ui/select";
 
 const FormSchema = z.object({
   type: z.enum(["friend", "public", "only-me"]),
@@ -37,6 +44,10 @@ const CreatePostModal = ({
 }: CreatePostModalProps) => {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
+    defaultValues: {
+      type: "friend",
+      content: "",
+    },
   });
   const onChange = (open: boolean) => {
     if (!open) {
@@ -57,57 +68,32 @@ const CreatePostModal = ({
                 <div className="text-base font-bold">Create a post</div>
                 <div className="flex items-center gap-18">
                   <span className="text-sm text-opacity-80">Visible for</span>
-
-                  <Popover>
-                    <PopoverTrigger>
-                      <div className="px-2.5 flex items-center justify-center gap-3 cursor-pointer">
-                        <span className="text-sm text-blueText">Friends</span>
-                        <IconAngleDown></IconAngleDown>
-                      </div>
-                    </PopoverTrigger>
-                    <PopoverContent className="w-fit p-30">
-                      <FormField
-                        control={form.control}
-                        name="type"
-                        render={({ field }) => (
-                          <FormItem className="space-y-3">
-                            <FormControl>
-                              <RadioGroup
-                                onValueChange={field.onChange}
-                                defaultValue={field.value}
-                                className="flex flex-col space-y-1"
-                              >
-                                <FormItem className="flex items-center space-x-3 space-y-0">
-                                  <FormControl>
-                                    <RadioGroupItem value="friend" />
-                                  </FormControl>
-                                  <FormLabel className="font-normal">
-                                    Friends
-                                  </FormLabel>
-                                </FormItem>
-                                <FormItem className="flex items-center space-x-3 space-y-0">
-                                  <FormControl>
-                                    <RadioGroupItem value="public" />
-                                  </FormControl>
-                                  <FormLabel className="font-normal">
-                                    Public
-                                  </FormLabel>
-                                </FormItem>
-                                <FormItem className="flex items-center space-x-3 space-y-0">
-                                  <FormControl>
-                                    <RadioGroupItem value="only-me" />
-                                  </FormControl>
-                                  <FormLabel className="font-normal">
-                                    Only me
-                                  </FormLabel>
-                                </FormItem>
-                              </RadioGroup>
-                            </FormControl>
-                          </FormItem>
-                        )}
-                      />
-                    </PopoverContent>
-                  </Popover>
+                  <FormField
+                    control={form.control}
+                    name="type"
+                    render={({ field }) => (
+                      <FormItem>
+                        <Select
+                          onValueChange={field.onChange}
+                          defaultValue={field.value}
+                        >
+                          <FormControl>
+                            <SelectTrigger className="text-sm text-blueText">
+                              <SelectValue
+                                defaultValue="friend"
+                                placeholder="Select a verified email to display"
+                              />
+                            </SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                            <SelectItem value="friend">Friends</SelectItem>
+                            <SelectItem value="public">Public</SelectItem>
+                            <SelectItem value="only-me">Only me</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </FormItem>
+                    )}
+                  />
                 </div>
               </div>
               <Separator className="bg-gray-200" />

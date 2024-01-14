@@ -8,7 +8,7 @@ import InputMain from "./input-main";
 
 const HeaderMain = () => {
   return (
-    <div className="flex items-center justify-between gap-5 py-5 px-6 bg-grayWhite">
+    <div className="flex items-center justify-between gap-5 py-5 px-6 bg-grayWhite h-[78px]">
       <Link href={"/messages"} className="md:hidden">
         <IconMessage />
       </Link>

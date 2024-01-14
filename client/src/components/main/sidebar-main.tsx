@@ -9,7 +9,7 @@ import { IconLogout } from "../icons";
 
 const SideBarMain = () => {
   const pathname = usePathname();
-
+  let string = "/";
   return (
     <>
       {/* Desktop */}
@@ -17,8 +17,10 @@ const SideBarMain = () => {
         {sidebarLinks.map((link) => (
           <SidebarLink
             key={link.title}
-            isActive={link.path === pathname}
-            isNotActive={link.path !== pathname}
+            isActive={string.concat(pathname.split("/")[1]).includes(link.path)}
+            isNotActive={
+              !string.concat(pathname.split("/")[1]).includes(link.path)
+            }
             link={link}
           ></SidebarLink>
         ))}

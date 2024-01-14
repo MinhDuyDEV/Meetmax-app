@@ -18,11 +18,9 @@ const SidebarLink = ({ link, isActive, isNotActive }: SidebarLinkProps) => {
       className={cn(
         "flex flex-col md:flex-row items-center md:py-3 py-1 md:px-5 md:space-x-5 md:rounded-10 rounded-sm cursor-pointer transition-all",
         isActive
-          ? "md:bg-grayText md:text-grayWhite border-b-4 border-grayText"
+          ? "md:bg-grayText md:text-grayWhite border-b-4 md:border-b-0 border-grayText"
           : "",
-        isNotActive
-          ? "hover:bg-grayText/60 focus:bg-grayText/60 hover:text-grayWhite"
-          : ""
+        isNotActive ? "hover:bg-gray-200 hover:text-grayText" : ""
       )}
     >
       <span>{link.icon}</span>
