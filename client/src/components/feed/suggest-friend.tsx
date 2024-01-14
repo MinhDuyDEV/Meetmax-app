@@ -46,10 +46,10 @@ const SuggestFriend = () => {
           <IconInstagram></IconInstagram>
         </div>
         <div className="flex items-center justify-between">
-          <Button className="px-9" variant="outline">
+          <Button className="px-9 lg:px-5" variant="outline">
             Ignore
           </Button>
-          <Button className="px-9">Follow</Button>
+          <Button className="px-9 lg:px-5">Follow</Button>
         </div>
       </div>
     </div>

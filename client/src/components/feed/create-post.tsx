@@ -46,22 +46,32 @@ const CreatePost = () => {
           onConfirm={() => setOpen(false)}
         ></CreatePostModal>
       </div>
-      <div className="flex items-center justify-between gap-14">
-        <div className="flex items-center justify-start gap-30">
-          <div className="flex items-center gap-2.5 flex-shrink-0">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center justify-start gap-4 xl:gap-6">
+          <div className="flex items-center gap-1 flex-shrink-0">
             <IconVideo></IconVideo>
-            <p className="text-sm">Live Video</p>
+            <p className="text-sm xl:text-xs">
+              Live{" "}
+              <span className="hidden md:inline md:text-sm xl:text-xs">
+                Video
+              </span>
+            </p>
           </div>
-          <div className="flex items-center gap-2.5 flex-shrink-0">
+          <div className="flex items-center gap-1 flex-shrink-0">
             <IconPicture></IconPicture>
-            <p className="text-sm">Photo/Video</p>
+            <p className="text-sm xl:text-xs">
+              Photo
+              <span className="hidden md:inline md:text-sm xl:text-xs">
+                /Video
+              </span>
+            </p>
           </div>
-          <div className="flex items-center gap-2.5 flex-shrink-0">
+          <div className="flex items-center gap-1 flex-shrink-0">
             <IconSmile></IconSmile>
-            <p className="text-sm">Feeling</p>
+            <p className="text-sm xl:text-xs">Feeling</p>
           </div>
         </div>
-        <Button className="bg-blueText py-2 px-30">Post</Button>
+        <Button className="bg-blueText h-fit">Post</Button>
       </div>
     </div>
   );
