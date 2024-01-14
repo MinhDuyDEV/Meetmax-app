@@ -9,7 +9,7 @@ import InputComment from "./input-comment";
 
 const Post = () => {
   return (
-    <div className="container-post flex flex-col flex-shrink-0 max-w-[512px]">
+    <div className="container-post flex flex-col flex-shrink-0">
       <div className="flex items-center justify-between mb-18">
         <div className="flex items-center justify-start gap-5">
           <Image src="/avatar.png" width={50} height={50} alt="avatar"></Image>
