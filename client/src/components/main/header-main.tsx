@@ -9,7 +9,9 @@ import InputMain from "./input-main";
 const HeaderMain = () => {
   return (
     <div className="flex items-center justify-between gap-5 py-5 px-6 bg-grayWhite">
-      <IconMessage className="md:hidden" />
+      <Link href={"/messages"} className="md:hidden">
+        <IconMessage />
+      </Link>
 
       <div className="flex items-center justify-center md:justify-start flex-1">
         <Link
@@ -22,7 +24,10 @@ const HeaderMain = () => {
         <InputMain className="max-w-xs lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"></InputMain>
       </div>
 
-      <div className="flex items-center justify-center gap-5">
+      <Link
+        href={"/profile"}
+        className="flex items-center justify-center gap-5"
+      >
         <span className="hidden md:inline">MinhDuy</span>
         <Image
           src="/avatar2.png"
@@ -31,7 +36,7 @@ const HeaderMain = () => {
           alt="avatar"
           className="object-cover rounded-10"
         ></Image>
-      </div>
+      </Link>
     </div>
   );
 };
