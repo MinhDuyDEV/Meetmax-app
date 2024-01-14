@@ -51,3 +51,5 @@ export { default as IconDocument } from "./icon-document";
 export { default as IconLocation } from "./icon-location";
 export { default as IconAngleDown } from "./icon-angle-down";
 export { default as IconClose } from "./icon-close";
+export { default as IconReport } from "./icon-report";
+export { default as IconUnFollow } from "./icon-un-Follow";

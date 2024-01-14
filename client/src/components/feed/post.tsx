@@ -1,11 +1,29 @@
 "use client";
 
 import React from "react";
-import { IconComment, IconHeart, IconOther, IconShare } from "../icons";
+import {
+  IconBell,
+  IconCloseEye,
+  IconComment,
+  IconHeart,
+  IconOther,
+  IconReport,
+  IconShare,
+  IconUnFollow,
+} from "../icons";
 import Image from "next/image";
 import { Input } from "../ui/input";
 import ButtonSend from "../main/button-send";
 import InputComment from "./input-comment";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
+import { Button } from "../ui/button";
+import { BookUser } from "lucide-react";
 
 const Post = () => {
   return (
@@ -18,7 +36,34 @@ const Post = () => {
             <p className="text-xs text-gray-400">15h. Public</p>
           </div>
         </div>
-        <IconOther></IconOther>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <span className="cursor-pointer p-2">
+              <IconOther></IconOther>
+            </span>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent
+            align="end"
+            className="p-18 flex flex-col gap-2.5"
+          >
+            <DropdownMenuItem className="text-grayText">
+              <IconCloseEye className="mr-18" />
+              <span className="">Order details</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-grayText">
+              <IconBell className="mr-18" />
+              <span className="">Turn on notification for this post</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-grayText">
+              <IconReport className="mr-18" />
+              <span className="">Report this post</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-grayText">
+              <IconUnFollow className="mr-18" />
+              <span className="">UnFollow</span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
       <div className="relative overflow-hidden mb-18">
         <Image
