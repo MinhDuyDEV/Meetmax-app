@@ -34,15 +34,19 @@ const SideBarMain = () => {
       </aside>
 
       {/* Mobile */}
-      <aside className="md:hidden fixed inset-x-0 bottom-0 z-10 flex justify-between px-2.5 pt-2.5 pb-0.5 bg-grayWhite transition-all">
+      <aside className="md:hidden fixed inset-x-0 bottom-0 h-[56px] z-10 flex justify-between px-2.5 pt-2.5 pb-0.5 bg-grayWhite transition-all">
         {sidebarLinks.map(
           (link) =>
             link.path !== "/messages" &&
             link.path !== "/profile" && (
               <SidebarLink
                 key={link.title}
-                isActive={link.path === pathname}
-                isNotActive={link.path !== pathname}
+                isActive={string
+                  .concat(pathname.split("/")[1])
+                  .includes(link.path)}
+                isNotActive={
+                  !string.concat(pathname.split("/")[1]).includes(link.path)
+                }
                 link={link}
               />
             )

@@ -28,6 +28,7 @@ import {
 } from "../ui/dropdown-menu";
 import { Button } from "../ui/button";
 import { BookUser } from "lucide-react";
+import { Separator } from "../ui/separator";
 
 const Post = () => {
   return (
@@ -85,18 +86,19 @@ const Post = () => {
           <p className="text-sm text-gray-400">17 Share</p>
         </div>
       </div>
-      <div className="border-t-[1px] border-b-[1px] py-2.5 flex items-center justify-between mb-3.5">
-        <div className="flex items-center gap-2.5 cursor-pointer">
+      <Separator className="bg-gray-200" />
+      <div className="flex my-1 items-center justify-between">
+        <div className="flex items-center gap-2.5 cursor-pointer hover:bg-gray-100 py-2.5 px-3 rounded-md">
           <IconHeart></IconHeart>
           <p className="text-xs">Like</p>
         </div>
-        <div className="flex items-center gap-2.5 cursor-pointer">
+        <div className="flex items-center gap-2.5 cursor-pointer hover:bg-gray-100 py-2.5 px-3 rounded-md">
           <IconComment></IconComment>
           <p className="text-xs">Comments</p>
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <div className="flex items-center gap-2.5 cursor-pointer">
+            <div className="flex items-center gap-2.5 cursor-pointer hover:bg-gray-100 py-2.5 px-3 rounded-md">
               <IconShare></IconShare>
               <p className="text-xs">Share</p>
             </div>
@@ -128,6 +130,7 @@ const Post = () => {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
+      <Separator className="bg-gray-200  mb-3.5" />
       <div className="flex items-center gap-3.5">
         <div className="relative overflow-hidden">
           <Image

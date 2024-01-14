@@ -16,15 +16,17 @@ const SidebarLink = ({ link, isActive, isNotActive }: SidebarLinkProps) => {
     <Link
       href={link.path}
       className={cn(
-        "flex flex-col md:flex-row items-center md:py-3 py-1 md:px-5 md:space-x-5 md:rounded-10 rounded-sm cursor-pointer transition-all",
+        "flex flex-col md:flex-row items-center md:py-3 px-3 py-1 md:px-5 md:space-x-5 md:rounded-10 rounded-sm cursor-pointer transition-all",
         isActive
-          ? "md:bg-grayText md:text-grayWhite border-b-4 md:border-b-0 border-grayText"
+          ? "md:bg-grayText md:text-grayWhite border-b-[3px] md:border-b-0 border-grayText"
           : "",
         isNotActive ? "hover:bg-gray-200 hover:text-grayText" : ""
       )}
     >
       <span>{link.icon}</span>
-      <span className="font-normal md:font-bold">{link.title}</span>
+      <span className="font-normal text-[10px] md:text-base md:font-bold">
+        {link.title}
+      </span>
     </Link>
   );
 };

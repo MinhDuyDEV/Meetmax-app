@@ -23,6 +23,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { Form, FormControl, FormField, FormItem } from "../ui/form";
+import { Button } from "../ui/button";
 
 const FormSchema = z.object({
   message: z.boolean(),
@@ -42,7 +43,7 @@ const ListFriendMain = () => {
   });
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
-    console.log("🚀 ~ onSubmit ~ onSubmit:", onSubmit);
+    console.log("🚀 ~ onSubmit ~ data:", data);
   }
   return (
     <div className="flex flex-col gap-5">
@@ -54,7 +55,7 @@ const ListFriendMain = () => {
               <IconOther></IconOther>
             </span>
           </PopoverTrigger>
-          <PopoverContent align="end">
+          <PopoverContent align="center">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}

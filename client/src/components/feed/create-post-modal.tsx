@@ -78,7 +78,7 @@ const CreatePostModal = ({
                           defaultValue={field.value}
                         >
                           <FormControl>
-                            <SelectTrigger className="text-sm text-blueText">
+                            <SelectTrigger className="text-sm text-blueText border-none bg-gray-50">
                               <SelectValue
                                 defaultValue="friend"
                                 placeholder="Select a verified email to display"
