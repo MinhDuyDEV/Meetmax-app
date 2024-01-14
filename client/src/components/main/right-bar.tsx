@@ -7,7 +7,7 @@ import ListFriendMain from "./list-friend-main";
 
 const RightBar = () => {
   return (
-    <div className="px-5 hidden gap-30 xl:flex flex-col w-[310px] sticky right-0 top-[78px] bg-grayWhite h-screen">
+    <div className="w-1/5 px-5 py-3 hidden gap-10 xl:flex flex-col sticky right-0 bg-grayWhite h-screen">
       <InputMain placeholder="Search Friends!"></InputMain>
       <ListStory></ListStory>
       <ListFriendMain></ListFriendMain>
