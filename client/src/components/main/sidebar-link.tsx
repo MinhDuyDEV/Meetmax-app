@@ -8,19 +8,25 @@ import React from "react";
 interface SidebarLinkProps {
   link: TSidebarLink;
   isActive: boolean;
+  isNotActive: boolean;
 }
 
-const SidebarLink = ({ link, isActive }: SidebarLinkProps) => {
+const SidebarLink = ({ link, isActive, isNotActive }: SidebarLinkProps) => {
   return (
     <Link
       href={link.path}
       className={cn(
-        "flex items-center py-3 px-5 space-x-5 rounded-10 cursor-pointer font-bold transition-all",
-        isActive ? "bg-grayText text-grayWhite" : ""
+        "flex flex-col md:flex-row items-center md:py-3 py-1 md:px-5 md:space-x-5 md:rounded-10 rounded-sm cursor-pointer transition-all",
+        isActive
+          ? "md:bg-grayText md:text-grayWhite border-b-4 border-grayText"
+          : "",
+        isNotActive
+          ? "hover:bg-grayText/60 focus:bg-grayText/60 hover:text-grayWhite"
+          : ""
       )}
     >
       <span>{link.icon}</span>
-      <span>{link.title}</span>
+      <span className="font-normal md:font-bold">{link.title}</span>
     </Link>
   );
 };
