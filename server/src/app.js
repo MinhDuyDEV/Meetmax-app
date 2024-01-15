@@ -19,8 +19,8 @@ app.use(
   })
 );
 
-// // init db
-// require("./database/init.mongodb");
+// init db
+require("./database/init.mongodb");
 
 // // init routes
 // app.use("/", require("./routes"));
