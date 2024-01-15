@@ -22,12 +22,8 @@ app.use(
 // init db
 require("./database/init.mongodb");
 
-// // init routes
-// app.use("/", require("./routes"));
-
-app.use("/", (req, res) => {
-  res.send("Hello World");
-});
+// init routes
+app.use("/", require("./routes"));
 
 // handling error
 app.use((req, res, next) => {
