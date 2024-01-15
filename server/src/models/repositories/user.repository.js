@@ -9,13 +9,20 @@ const findUserById = async (userId) => {
   }).lean();
 };
 
-const findUserByEmail = async (email) => {
+const findUserByEmail = async ({ email }) => {
   return await User.findOne({
     email,
+  }).lean();
+};
+
+const findUserByUsername = async ({ username }) => {
+  return await User.findOne({
+    username,
   }).lean();
 };
 
 module.exports = {
   findUserById,
   findUserByEmail,
+  findUserByUsername,
 };
