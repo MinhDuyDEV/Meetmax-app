@@ -21,7 +21,7 @@ const LayoutMain = ({ children }: { children: React.ReactNode }) => {
         <SideBarMain></SideBarMain>
 
         {/* content */}
-        <div className="flex-1 bg-gray-50 h-full rounded-3xl last:mr-30">
+        <div className="flex-1 bg-gray-50 h-full rounded-3xl last:mr-30 overflow-hidden">
           {children}
         </div>
 

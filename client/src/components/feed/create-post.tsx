@@ -49,16 +49,16 @@ const CreatePost = () => {
         </div>
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-start gap-4 xl:gap-6">
-            <div className="flex items-center gap-1 flex-shrink-0">
+            <div className="flex items-center gap-1 flex-shrink-0 cursor-pointer">
               <IconVideo></IconVideo>
               <p className="text-sm xl:text-xs">
-                Live{" "}
+                Live
                 <span className="hidden md:inline md:text-sm xl:text-xs">
                   Video
                 </span>
               </p>
             </div>
-            <div className="flex items-center gap-1 flex-shrink-0">
+            <div className="flex items-center gap-1 flex-shrink-0 cursor-pointer">
               <IconPicture></IconPicture>
               <p className="text-sm xl:text-xs">
                 Photo
@@ -67,7 +67,7 @@ const CreatePost = () => {
                 </span>
               </p>
             </div>
-            <div className="flex items-center gap-1 flex-shrink-0">
+            <div className="flex items-center gap-1 flex-shrink-0 cursor-pointer">
               <IconSmile></IconSmile>
               <p className="text-sm xl:text-xs">Feeling</p>
             </div>
